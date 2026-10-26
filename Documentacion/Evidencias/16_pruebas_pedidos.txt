@@ -1,0 +1,16 @@
+INICIO | Pedidos: 1 | Detalles: 1 | Stock: 50 | Auditoria: 0
+Pedido #120 registrado con exito.
+Item agregado. Subtotal: $24000
+A OK | Pedido: 120 | Total: 24000 | Stock antes: 50 | Stock despues: 48
+B OK | Stock insuficiente: ORA-20001: Stock insuficiente. Disponible: 48, solicitado: 49
+C OK | Cantidad cero: ORA-20006: La cantidad debe ser mayor que cero.
+BC OK | Sin cambios indebidos | Detalles: 1 | Total: 24000 | Stock: 48
+D OK | Reactivacion rechazada: ORA-20012: Un pedido cancelado no puede volver a activarse.
+ORA-06512: at "FNAF.TGR_VALIDAR_ESTADO_PEDIDO", line 7
+ORA-04088: error during execution of trigger 'FNAF.TGR_VALIDAR_ESTADO_PEDIDO'
+E OK | Filas actualizadas: 2 | Auditoria antes: 2 | Auditoria despues: 3 | Incremento: 1
+F OK | Reversion comprobada | Pedidos: 1 | Detalles: 1 | Stock: 50 | Auditoria: 0
+PRUEBA INTEGRADA COMPLETADA. Datos de prueba revertidos; secuencias consumidas.
+
+
+PL/SQL procedure successfully completed.

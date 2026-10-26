@@ -1,0 +1,46 @@
+BANNER
+---------------------------------------------------------------------------------------------------------------------------------
+Oracle AI Database 26ai Free Release 23.26.2.0.0 - Develop, Learn, and Run for Free
+
+
+ ID_PEDIDO FECHA      E      TOTAL
+---------- ---------- - ----------
+         1 2026-09-19 E      12000
+
+C OK | Mes actual | Esperado: 0 | Obtenido: 0
+
+
+PL/SQL procedure successfully completed.
+
+D OK | Periodo 2026-09 | Esperado: 12000 | Obtenido: 12000
+
+
+PL/SQL procedure successfully completed.
+
+----------------------------------------
+PRODUCTOS CON STOCK CRITICO
+----------------------------------------
+No se registran productos con stock critico.
+
+
+PL/SQL procedure successfully completed.
+
+
+ID_PRODUCTO NOMBRE                      CANTIDAD STOCK_MINIMO SITUACION 
+----------- ------------------------- ---------- ------------ ----------
+          1 Pizza Familiar                    50           10 NO CRITICO
+
+
+DESCUENTO_VIP DESCUENTO_REGULAR DESCUENTO_TOTAL_NULO TOTAL_HISTORICO
+------------- ----------------- -------------------- ---------------
+         5000                 0                    0           12000
+
+G OK | VIP: 5000 | Regular: 0 | NULL: 0 | Historico: 12000
+
+
+PL/SQL procedure successfully completed.
+
+H OK | Rechazo esperado: ORA-20021: El total no puede ser negativo.
+
+
+PL/SQL procedure successfully completed.
